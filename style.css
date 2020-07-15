@@ -1,0 +1,387 @@
+body{
+    margin: 0;
+    margin-bottom: 47px;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(212, 232, 245);
+}
+.container{
+    background-color: rgb(212, 232, 245);
+    background-position: center;
+    height: 100vh;
+    /* opacity: 85%; */
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 241, 248);
+    width: 200px;
+    height: 75%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    margin: 0;
+    opacity: 90%;
+}
+
+.change{
+    left: 0;
+    border-radius: 0px 350px 350px 0px;
+    transition: ease-in-out .5s;
+}
+
+.change .line--1{
+    transform: rotateZ(-405deg) translate(-11px, 9px);
+}
+
+.change .line--2{
+    opacity: 0;
+}
+
+.change .line--3{
+    transform: rotateZ(405deg) translate(-10px, -8px);
+}
+
+.change .hamburger--container{
+    background-color: transparent;
+    transition: ease-in-out .5s;
+}
+
+.logo{
+    height: 100px;
+    margin: 30px;
+}
+
+.hamburger--container{
+    position: fixed;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    left: 50px;
+    padding: 15px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 90%;
+}
+
+.hamburger--line{
+    background-color: rgb(236, 195, 117);
+    width: 100%;
+    height: 5px;
+}
+
+.ul--navlinks li{
+    margin: 50px;
+    text-align: center;
+    list-style: none;
+}
+
+.ul--navlinks li a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* ^^NAV BAR^^ */
+
+.me-container{
+    height: 55%;
+    width: 50%;
+    background-color: rgb(218, 241, 248);
+    /* opacity: 90%; */
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+.me-container h1{
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+}
+
+.me-container h2{
+    font-size: 1.5rem;
+    color: rgb(71, 71, 71);
+}
+
+.me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SOCIALS */
+.find-me{
+    color: rgb(236, 195, 117);
+}
+
+.find-me a{
+    color: rgb(236, 195, 117);
+}
+
+/* ^^SOCIALS^^ */
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 7%;
+    background-color: rgb(212, 232, 245);
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    opacity: 85%;
+}
+/* ^^FOOTER^^ */
+
+/* ABOUT ME */
+.learn-more{
+    width: 100%;
+    height: 50vh;
+}
+
+.bg-primary{
+    background: rgb(202, 229, 247);
+}
+
+.bg-secondary{
+    background: rgb(218, 241, 248);
+}
+
+.bg-light{
+    background: rgb(202, 229, 247);
+}
+
+.box{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box h2{
+    font-size: 2rem;
+}
+
+.box p{
+    color: rgb(71, 71, 71);
+    font-size: 1.25rem;
+}
+
+.avatar{
+    width: 60%;
+    height: 80%;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  /* RESUME POPUP */
+
+  #resume{
+      height: 70%;
+      width: 50%;
+      margin: 0 auto;
+  }
+
+
+  #resume {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #myImg:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 90%;
+    max-width: 700px;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: rgb(236, 195, 117);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  /* ^^RESUME POPUP^^ */
+
+  /* REACH OUT */
+
+  #reach-out{
+    display: flex;
+    width: 70%;
+    height: 60%;
+    background-color: rgb(218, 241, 248);
+    opacity: 90%; 
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+  }
+
+  #reach-out .boxy{
+      display: flex;
+      width: 50%;
+      border: outset 5px rgb(202, 229, 247);
+      flex-direction: column;
+      align-items: center;
+    
+  }
+
+  .boxy h1{
+      font-size: 3rem;
+  }
+
+  .boxy a{
+      color: rgb(236, 195, 117);
+  }
+
+ .boxy form{
+     display: flex;
+     flex-direction: column;
+     font-size: 1.5rem;
+ }
+
+ input[type=submit] {
+    background-color: rgb(236, 195, 117);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+  }
+
+  input[type=text], select, textarea {
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid black;
+  }
+
+  /* ^^^ REACH OUT/CONTACT FORM ^^^ */
+
+  /* PROJECTS */
+  
+  #project-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #project-cards .card{
+      border: outset 5px rgb(202, 229, 247);
+      background-color: rgb(218, 241, 248);
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+
+  #project-cards .project-pic{
+      width: 100%;
+      height: 75%;
+  }
+
+  input[type=button] {
+    background-color: rgb(236, 195, 117);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+  }
+
+
+
+
+
+
+
+
+
+/* ^^ PROJECTS ^^ */
