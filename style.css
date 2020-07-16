@@ -376,6 +376,11 @@ header{
     align-self: center;
   }
 
+  .buttons{
+      display: flex;
+      flex-direction: row;
+  }
+
 
 
 
