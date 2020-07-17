@@ -378,7 +378,7 @@ header{
   }
 
   #project-cards .card{
-      border: outset 5px rgb(202, 229, 247);
+      box-shadow: 10px 10px 25px;
       background-color: rgb(218, 241, 248);
       display: flex;
       flex-direction: column;
