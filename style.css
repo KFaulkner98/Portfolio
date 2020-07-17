@@ -1,3 +1,7 @@
+* {
+    text-decoration: none;
+}
+
 body{
     margin: 0;
     margin-bottom: 47px;
@@ -32,6 +36,7 @@ header{
     left: -300px;
     margin: 0;
     opacity: 90%;
+    z-index: 2;
 }
 
 .change{
@@ -147,6 +152,8 @@ header{
     position: fixed;
     text-align: center;
     opacity: 85%;
+    z-index: 0;
+    
 }
 /* ^^FOOTER^^ */
 
@@ -192,6 +199,18 @@ header{
     height: 80%;
     border-radius: 50%;
     margin: 0 auto;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 
   /* RESUME POPUP */
@@ -252,7 +271,7 @@ header{
     top: 15px;
     right: 35px;
     color: rgb(236, 195, 117);
-    font-size: 40px;
+    font-size: 150px;
     font-weight: bold;
     transition: 0.3s;
   }
@@ -295,8 +314,8 @@ header{
       border: outset 5px rgb(202, 229, 247);
       flex-direction: column;
       align-items: center;
-    
   }
+
 
   .boxy h1{
       font-size: 3rem;
@@ -306,10 +325,15 @@ header{
       color: rgb(236, 195, 117);
   }
 
+  .boxy p{
+      text-align: left;
+  }
+
  .boxy form{
      display: flex;
      flex-direction: column;
      font-size: 1.5rem;
+     width: 75%;
  }
 
  input[type=submit] {
@@ -327,7 +351,7 @@ header{
       border-radius: 5px;
       width: 100%;
       box-sizing: border-box;
-      border: 2px solid black;
+      border: 2px solid rgb(202, 229, 247);
   }
 
   /* ^^^ REACH OUT/CONTACT FORM ^^^ */
@@ -350,6 +374,7 @@ header{
     right: 0;
     justify-content: center;
     text-align: center;
+    
   }
 
   #project-cards .card{
@@ -365,26 +390,22 @@ header{
       height: 75%;
   }
 
-  input[type=button] {
+  .btns{
     background-color: rgb(236, 195, 117);
     color: white;
-    padding: 12px 20px;
+    padding: 5px 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
-    width: 50%;
+    
     align-self: center;
   }
 
   .buttons{
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
   }
-
-
-
-
-
 
 
 
